@@ -1,45 +1,47 @@
-% Please do not change the document class
 \documentclass{scrartcl}
 
-% Please do not change these packages
 \usepackage[hidelinks]{hyperref}
 \usepackage[none]{hyphenat}
 \usepackage{setspace}
 \doublespace
 
-% You may add additional packages here
-\usepackage{amsmath}
+\usepackage[style=ieee]{biblatex}
 
-% Please include a clear, concise, and descriptive title
-\title{Your Title Here}
+\title{Methods to Prioritize and Reduce Uncertainty of User Stories in Inexperienced Agile Game Development Teams}
+\subtitle{Comp150 - Agile Development Practice}
+\author{1801673}
+\date{November 2018}
+\bibliography{biblio}
 
-% Please do not change the subtitle
-\subtitle{COMP150 - Agile Development Practice}
-
-% Please put your student number in the author field
-\author{DO NOT WRITE YOUR NAME\\Put your student number (on your ID card) here}
 
 \begin{document}
-
-\maketitle
-
-\abstract{Please include an abstract of at most 100 words (these do not count towards your word count).}
-
-\section{Introduction}
-
-Write your introduction here. A brief introduction is recommended, which should outline key details of the chosen topic and the reviewed papers, motivate the work, and provide a roadmap of key points to the reader. The motivation is quite important here, as essays should have a contribution (i.e., what is the point of the essay, and what does the reader take away from the essay) and the link between the motivation (in the introduction) and the contribution (in the conclusion) should be made clear.
-
-\section{Your section title here}
-
-Write the main body of your essay here. Add more sections if appropriate. You may choose to write about each of your three papers in its own section, or you may choose a different structure. Either way, remember that you are being assessed on technical insight and analysis: it is not enough to merely summarise the contents of the three papers. You must demonstrate the ability to make inferences beyond what is written in the papers, and to draw the three papers together into a single coherent narrative.
-
-Your essay must make a clear recommendation, in terms of which of the three techniques you have reviewed is the best according to whichever metric or metrics you feel is most appropriate. You must justify your choice, backing it up with empirical evidence. However remember that an academic essay is not a murder mystery: you should already have briefly discussed your recommendation in the introduction and in other parts of the essay. Do not save it for a grand reveal at the end.
-
-\section{Conclusion}
-
-Write your conclusion here. The conclusion should do more than summarise the essay, making clear the contribution of the work and highlighting key points, limitations, and outstanding questions. It should not introduce any new content or information.
-
-\bibliographystyle{ieeetran}
-\bibliography{references}
-
+    \pagenumbering{gobble}
+    \maketitle
+    \newpage
+    \pagenumbering{arabic}
+    \section{Introduction}
+    I ain't good with words so here goes. In this essay I will explore practices within agile software development that influence User Stories directly and indirectly, and compare the benefits and drawbacks of each of them. What I wish to have explored by the end of this paper is what methods there are to streamline and increase precision of the User Story process.
+    \section{Managing Uncertainty}
+    Uncertainty is a big problem, and experience is the best way to get around this. Unfortunately in inexperienced teams don't have the luxury of many years of knowledge to help base their estimations. 92\% of industries \cite{8337935} consider experience to be vital in User Story estimation, but within inexperienced teams how can we get around this and still produce accurate estimations.
+    \paragraph{Sub-Stories}
+    Abstract User Stories are great for designers and showing off to your product owner, but when making an estimation on something somewhat vague, getting something accurate can be challenging. The use of Sub-Stories can help more accurately estimate the size of the overall User Story, by breaking it down into easier to manage chunks. As mentioned in  \cite{7100471}, 2 simple rules are proposed to enable the creation of accurate sub-stories. These are:
+    \begin{itemize}
+        \item Enables a tolerable level of uncertainty
+        \item Produces a set of things to estimate that is small enough to be practical.
+    \end{itemize}
+    Following these 2 rules a bulky and abstract User Story can be broken down into simple, manageable chunks based on its underlying requirements which can be individually estimated more accurately than the initial US that has had no clarification on it.
+    As stated in \cite{cohn2005agile}, there are many ways to split up a User Story and each one has its own purpose. If the US entails a lot of differing inputs being processed, the Story can be split across its data boundaries. If the US is asking for something that is large as has many different tasks to perform, then those parts can be singled out and become Sub-Stories on their own.
+    These Sub-Stories don't need to have the friendliness of the full User Story, they serve simply to increase the accuracy of estimation. They also serve particular help to the programmers within a game, as a task oriented outlook can be easier to look at and understand.
+    \paragraph{Modified Planning Poker}
+    Rather than using a linear scale for effort estimation, the use of a different scale can help. Firstly, from \cite{cohn2005agile}, a Fibonacci scale of \{1, 2, 3, 5, 8\} is recommended as it has nice spacing between the values, and the apparent 'intensity' keeps getting larger as you go on. For larger projects and User Stories that need estimating, the scale can be expanded to \{1, 2, 3, 5, 8, 13, 20, 40\} \cite{cohn2005agile}. One of the advantages of using the Fibonacci sequence is the greater continual increase implies that the overall decrease of accuracy in estimating the large US, which is unavoidable is a lot of cases\cite{903173}.
+    \newline
+    Another option for this is using T-shirt sizes as a scale, as this completed removes the use of numbers and can thus remove all confusion around having to select the correct numbers for a task. Assigning a User Story with a T-shirt size (S, M, L, XL, XXL) will seem to be more vague and inaccurate, but in turn can speed up the estimating process and tasks are assigned to a relative size, rather than a number which can mean different things to different people.
+    \section{Conclusion?}
+    So in the end, here are sum lil ways to reduce inaccuracy while estimating User Stories, which can also serve to help people with a more task focused outlook later on. Big thank.
+    i am crap at writing. :)
+    
+    
+    \newpage
+    \printbibliography
+    
 \end{document}
